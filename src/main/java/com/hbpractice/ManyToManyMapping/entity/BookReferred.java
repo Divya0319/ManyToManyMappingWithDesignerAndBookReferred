@@ -75,7 +75,6 @@ public class BookReferred {
 		this.coder = coder;
 	}
 	
-	
 
 	public List<BookReview> getBookReviews() {
 		return bookReviews;

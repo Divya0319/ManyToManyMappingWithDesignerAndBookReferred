@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.hbpractice.ManyToManyMapping.entity.BookReferred;
-import com.hbpractice.ManyToManyMapping.entity.BookReview;
 import com.hbpractice.ManyToManyMapping.entity.Coder;
 import com.hbpractice.ManyToManyMapping.entity.CoderDetail;
 

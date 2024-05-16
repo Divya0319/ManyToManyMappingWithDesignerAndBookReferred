@@ -18,6 +18,13 @@ public class BookReview {
 	@Column(name="comment")
 	private String comment;
 	
+	public BookReview() {
+		
+	}
+	
+	public BookReview(String comment) {
+		this.comment = comment;
+	}
 
 	public int getId() {
 		return id;
