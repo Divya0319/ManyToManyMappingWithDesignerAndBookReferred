@@ -38,6 +38,7 @@ public class SampleDataInitializer {
 	public void init() {
 		insertIntoEntitiesOneByOne();
 	}
+	
 
 	private void insertIntoEntitiesOneByOne() {
 		// Sample data for CoderDetail
@@ -85,6 +86,7 @@ public class SampleDataInitializer {
             "Informative and well-written.",
             "Not what I expected, but pleasantly surprised."
         };
+        
 
         for (int i = 0; i < 5; i++) {
             // Create and save CoderDetail
@@ -99,7 +101,6 @@ public class SampleDataInitializer {
             designer.setFirstName(firstNamesDes[i]);
             designer.setLastName(lastNamesDes[i]);
             designer.setEmail(emailsDes[i]);
-            designerRepository.save(designer);
             
             // Create BookReview 
             BookReview bookReview = new BookReview(comments[i]);
@@ -108,7 +109,12 @@ public class SampleDataInitializer {
             BookReferred bookReferred = new BookReferred(bookTitles[i]);
             bookReferred.addBookReview(bookReview);
             bookReferred.setCoder(coder);
-            bookReferredRepository.save(bookReferred);
+            coder.addBook(bookReferred);
+            
+            designer.addBook(bookReferred);
+            designerRepository.save(designer);
+            
+            
         }
 		
 	}
