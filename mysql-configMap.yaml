@@ -4,6 +4,6 @@ metadata:
   name : db-config
 data:
   host : mysql
-  dbNameForHbMany: hb_many_to_many
+  dbNameForHbMany: coder_designer_book_db
   dbNameForFortune: fortune_dir
   dbNameForEmp: employee_dir

@@ -21,7 +21,7 @@ spec:
         app: hibernate-all-mappings
     spec:
       containers:
-      - image: 865868102637.dkr.ecr.us-east-2.amazonaws.com/hb-many:1.0
+      - image: 851725279940.dkr.ecr.ap-northeast-1.amazonaws.com/hb-many-aws:1.0
         imagePullPolicy: IfNotPresent
         name: hibernate-all-mappings
         resources:
